@@ -1215,7 +1215,7 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					<NumberOfIntervals>100</NumberOfIntervals>
 					<MinMaxAutodetect>true</MinMaxAutodetect>
 					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
-					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
+					<RangeMaxExpression><![CDATA[10]]></RangeMaxExpression>
 					<InitialIntervalSize><![CDATA[1]]></InitialIntervalSize>
 					<CalculateCDF>true</CalculateCDF>
 					<CalculatePercentiles>false</CalculatePercentiles>
@@ -1398,7 +1398,7 @@ std_dev_5 = num_adopters_5_hist.deviation();]]></AfterExperimentCode>
 			<FreeformParamValue>	
 				<Id>1575899364135</Id>
 				<Expression Class="CodeValue">
-					<Code><![CDATA[1000]]></Code>
+					<Code><![CDATA[10000]]></Code>
 				</Expression>
 			</FreeformParamValue>
 			<RangeVariationParamValue>	
