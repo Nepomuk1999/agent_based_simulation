@@ -933,7 +933,7 @@
 	<RelativeAccuracy>1.0E-5</RelativeAccuracy>
 	<TimeAccuracy>1.0E-5</TimeAccuracy>
 	<Frame>
-		<Width>800</Width>
+		<Width>810</Width>
 		<Height>600</Height>
 	</Frame>
 	<Database>
@@ -1097,11 +1097,61 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
 			<VmArgs><![CDATA[]]></VmArgs>
 			<LoadRootFromSnapshot>false</LoadRootFromSnapshot>
+			<Variables>
+				<Variable Class="PlainVariable">
+					<Id>1575907784035</Id>
+					<Name><![CDATA[mean_3]]></Name>
+					<X>40</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1575907806029</Id>
+					<Name><![CDATA[std_dev_3]]></Name>
+					<X>40</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1575907852381</Id>
+					<Name><![CDATA[mean_5]]></Name>
+					<X>250</X><Y>90</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1575907852385</Id>
+					<Name><![CDATA[std_dev_5]]></Name>
+					<X>250</X><Y>120</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+					</Properties>
+				</Variable>
+			</Variables>
 			<AnalysisData>
     			<DataSet>
 					<Id>1575901284554</Id>
 					<Name><![CDATA[num_adopters_3]]></Name>
-					<X>40</X><Y>70</Y>
+					<X>40</X><Y>30</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1123,7 +1173,7 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
     			<DataSet>
 					<Id>1575901829692</Id>
 					<Name><![CDATA[num_adopters_5]]></Name>
-					<X>40</X><Y>110</Y>
+					<X>250</X><Y>30</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1145,12 +1195,12 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
     			<HistogramData>
 					<Id>1575902149379</Id>
 					<Name><![CDATA[num_adopters_3_hist]]></Name>
-					<X>270</X><Y>70</Y>
+					<X>40</X><Y>60</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
+					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1575964800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -1165,8 +1215,8 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					<NumberOfIntervals>100</NumberOfIntervals>
 					<MinMaxAutodetect>true</MinMaxAutodetect>
 					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
-					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
-					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<RangeMaxExpression><![CDATA[10]]></RangeMaxExpression>
+					<InitialIntervalSize><![CDATA[1]]></InitialIntervalSize>
 					<CalculateCDF>true</CalculateCDF>
 					<CalculatePercentiles>false</CalculatePercentiles>
 					<LowPercent>10</LowPercent>
@@ -1176,12 +1226,12 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
     			<HistogramData>
 					<Id>1575902196045</Id>
 					<Name><![CDATA[num_adopters_5_hist]]></Name>
-					<X>280</X><Y>90</Y>
+					<X>250</X><Y>60</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<AutoUpdate>false</AutoUpdate>
+					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1575964800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -1197,7 +1247,7 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					<MinMaxAutodetect>true</MinMaxAutodetect>
 					<RangeMinExpression><![CDATA[0]]></RangeMinExpression>
 					<RangeMaxExpression><![CDATA[1]]></RangeMaxExpression>
-					<InitialIntervalSize><![CDATA[0.1]]></InitialIntervalSize>
+					<InitialIntervalSize><![CDATA[1]]></InitialIntervalSize>
 					<CalculateCDF>true</CalculateCDF>
 					<CalculatePercentiles>false</CalculatePercentiles>
 					<LowPercent>10</LowPercent>
@@ -1210,13 +1260,13 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
     			<Histogram>
 					<Id>1575902006240</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>10</X><Y>180</Y>
+					<X>0</X><Y>160</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>false</AutoUpdate>
+					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1575964800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -1228,15 +1278,15 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>430</Width>
-					<Height>280</Height>
+					<Width>680</Width>
+					<Height>440</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>350</Width>
-						<Height>190</Height>
+						<Width>600</Width>
+						<Height>350</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -1253,8 +1303,8 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<ShowPDF>true</ShowPDF>
-					<ShowCDF>false</ShowCDF>
-					<ShowMean>false</ShowMean>
+					<ShowCDF>true</ShowCDF>
+					<ShowMean>true</ShowMean>
 					<Bars>
 						<Direction>UP</Direction>
 						<RelativeWidth>0.8</RelativeWidth>
@@ -1271,15 +1321,15 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					</HistogramDataExpression>
     			</Histogram>
     			<Histogram>
-					<Id>1575902095033</Id>
+					<Id>1575908685809</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>0</X><Y>460</Y>
+					<X>0</X><Y>610</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>false</ShowLabel>
 					<DrawMode>SHAPE_DRAW_2D3D</DrawMode>
-					<AutoUpdate>false</AutoUpdate>
+					<AutoUpdate>true</AutoUpdate>
 					<OccurrenceAtTime>true</OccurrenceAtTime>
 					<OccurrenceDate>1575964800000</OccurrenceDate>
 					<OccurrenceTime Class="CodeUnitValue">
@@ -1291,15 +1341,15 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 						<Unit Class="TimeUnits"><![CDATA[MINUTE]]></Unit>
 					</RecurrenceCode>
 					<EmbeddedIcon>false</EmbeddedIcon>
-					<Width>500</Width>
-					<Height>310</Height>
+					<Width>680</Width>
+					<Height>440</Height>
 					<BackgroundColor/>
 					<BorderColor/>
 					<ChartArea>
 						<XOffset>50</XOffset>
 						<YOffset>30</YOffset>
-						<Width>420</Width>
-						<Height>220</Height>
+						<Width>600</Width>
+						<Height>350</Height>
 						<BackgroundColor>-1</BackgroundColor>
 						<BorderColor>-16777216</BorderColor>
 						<GridColor>-12566464</GridColor>
@@ -1316,8 +1366,8 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 					</Labels>
 					<ShowLegend>true</ShowLegend>
 					<ShowPDF>true</ShowPDF>
-					<ShowCDF>false</ShowCDF>
-					<ShowMean>false</ShowMean>
+					<ShowCDF>true</ShowCDF>
+					<ShowMean>true</ShowMean>
 					<Bars>
 						<Direction>UP</Direction>
 						<RelativeWidth>0.8</RelativeWidth>
@@ -1335,6 +1385,10 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
     			</Histogram>
 			</Presentation>
 
+			<AfterExperimentCode><![CDATA[mean_3 = num_adopters_3_hist.mean();
+mean_5 = num_adopters_5_hist.mean();
+std_dev_3 = num_adopters_3_hist.deviation();
+std_dev_5 = num_adopters_5_hist.deviation();]]></AfterExperimentCode>
 			<AllowParallelEvaluations>true</AllowParallelEvaluations>
 			<UseFreeformParameters>true</UseFreeformParameters>
 			<NumberOfRuns>100</NumberOfRuns>
@@ -1344,7 +1398,7 @@ num_adopters_5_hist.add(root.number_of_adopters_time_5);]]></AfterSimulationRunC
 			<FreeformParamValue>	
 				<Id>1575899364135</Id>
 				<Expression Class="CodeValue">
-					<Code><![CDATA[1000]]></Code>
+					<Code><![CDATA[10000]]></Code>
 				</Expression>
 			</FreeformParamValue>
 			<RangeVariationParamValue>	
