@@ -1063,7 +1063,7 @@ getEngine().getExperimentHost().setPresentable( getEngine().getRoot() );]]></Act
 				<Parameter>
 					<ParameterName><![CDATA[number_agents_initial]]></ParameterName>
 					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[550]]></Code>
+						<Code><![CDATA[2400]]></Code>
 					</ParameterValue>
 				</Parameter>
 			</Parameters>			
@@ -1079,8 +1079,8 @@ getEngine().getExperimentHost().setPresentable( getEngine().getRoot() );]]></Act
 				<StopOption><![CDATA[Stop at specified time]]></StopOption>
 				<InitialDate><![CDATA[1258621851296]]></InitialDate>	
 				<InitialTime><![CDATA[0.0]]></InitialTime>	
-				<FinalDate><![CDATA[1258622751000]]></FinalDate>	
-				<FinalTime><![CDATA[15.0]]></FinalTime>	
+				<FinalDate><![CDATA[1258623351000]]></FinalDate>	
+				<FinalTime><![CDATA[25.0]]></FinalTime>	
 			</ModelTimeProperties>
 		</SimulationExperiment>
 		<!--   =========  Parameter Variation Experiment   ========  -->

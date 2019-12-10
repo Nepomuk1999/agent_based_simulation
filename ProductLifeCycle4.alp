@@ -884,7 +884,7 @@ getEngine().getExperimentHost().setPresentable( getEngine().getRoot() );]]></Act
 				<Parameter>
 					<ParameterName><![CDATA[TotalPopulation]]></ParameterName>
 					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[10]]></Code>
+						<Code><![CDATA[500]]></Code>
 					</ParameterValue>
 				</Parameter>
 				<Parameter>
