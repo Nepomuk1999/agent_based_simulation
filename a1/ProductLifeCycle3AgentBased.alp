@@ -1063,7 +1063,7 @@ getEngine().getExperimentHost().setPresentable( getEngine().getRoot() );]]></Act
 				<Parameter>
 					<ParameterName><![CDATA[number_agents_initial]]></ParameterName>
 					<ParameterValue Class="CodeValue">
-						<Code><![CDATA[3000]]></Code>
+						<Code><![CDATA[2400]]></Code>
 					</ParameterValue>
 				</Parameter>
 			</Parameters>			
@@ -1401,7 +1401,7 @@ std_dev_5 = num_adopters_5_hist.deviation();]]></AfterExperimentCode>
 			<FreeformParamValue>	
 				<Id>1575899364135</Id>
 				<Expression Class="CodeValue">
-					<Code><![CDATA[6000]]></Code>
+					<Code><![CDATA[10000]]></Code>
 				</Expression>
 			</FreeformParamValue>
 			<RangeVariationParamValue>	
