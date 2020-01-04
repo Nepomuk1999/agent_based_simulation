@@ -4,15 +4,16 @@
 
 Type of the organisation.
 
-1 = kindergarten
-2 = elementary school
-3 = secondary school
-4 = workplace
-5 = freetime organisation
+* 1 = kindergarten
+* 2 = elementary school
+* 3 = secondary school
+* 4 = workplace
+* 5 = freetime organisation
 
-## Altersklassen für impfungen
+## Altersklassen für impfungen aus transmissionProbabilities
 
-0-12 = 1
-13-17 = 2
-18-60 = 3
-61+ = 4
+* 0 = all
+* 0-4 = 1
+* 5-18 = 2
+* 19-64 = 3
+* 65+ = 4
